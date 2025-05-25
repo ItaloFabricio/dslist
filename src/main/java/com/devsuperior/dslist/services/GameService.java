@@ -8,9 +8,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service //vai registrar minha classe GameService como sendo um componente do sistema e eu posso utilizar
+//em outros componentes (injetar dependencias)
 public class GameService {
 
+    //injentando o GameRepository
     @Autowired
     private GameRepository gameRepository;
 
